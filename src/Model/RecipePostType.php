@@ -31,6 +31,7 @@ class RecipePostType
             'title',
             'editor',
             'thumbnail',
+            'revisions',
         ];
 
         return [
@@ -38,6 +39,30 @@ class RecipePostType
             'public' => true,
             'show_in_rest' => true,
             'supports' => $supports,
+            'template' => $this->template(),
+            'template_lock' => 'all',
+        ];
+    }
+
+    private function template() : array
+    {
+
+        return [
+            [
+                'core/gallery',
+                [
+                    'align' => 'center',
+                ],
+            ],
+            [
+                'recipe/ingredients',
+            ],
+            [
+                'core/paragraph',
+                [
+                    'placeholder' => __('How do I cook this recipe?', 'recipe'),
+                ],
+            ],
         ];
     }
 }

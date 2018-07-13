@@ -1,0 +1,23 @@
+{
+    "name": "recipes-plugin",
+    "description": "",
+    "version": "1.0.0",
+    "license": "GPL-2.0-only",
+    "devDependencies": {
+        "babel-core": "^6.25.0",
+        "babel-loader": "^7.1.5",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
+        "babel-plugin-transform-react-jsx": "^6.24.1",
+        "eslint": "^5.1.0",
+        "eslint-config-standard": "^11.0.0",
+        "eslint-plugin-import": "^2.13.0",
+        "eslint-plugin-node": "^6.0.1",
+        "eslint-plugin-promise": "^3.8.0",
+        "eslint-plugin-standard": "^3.1.0",
+        "webpack": "^3.10.0"
+    },
+    "dependencies": {
+        "lodash": "^4.17.10",
+        "querystring": "^0.2.0"
+    }
+}

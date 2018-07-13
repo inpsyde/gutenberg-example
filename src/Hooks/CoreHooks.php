@@ -3,6 +3,7 @@ declare(strict_types = 1);
 
 namespace Inpsyde\Recipe\Hooks;
 
+use Inpsyde\Recipe\Model\IngredientsBlock;
 use Inpsyde\Recipe\Model\RecipePostType;
 
 class CoreHooks implements Hook
@@ -23,6 +24,7 @@ class CoreHooks implements Hook
             function () {
 
                 (new RecipePostType())->register();
+                (new IngredientsBlock($this->rootFile))->register();
             }
         );
 
