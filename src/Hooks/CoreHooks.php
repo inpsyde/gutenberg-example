@@ -5,6 +5,7 @@ namespace Inpsyde\Recipe\Hooks;
 
 use Inpsyde\Recipe\Model\EditorPicks;
 use Inpsyde\Recipe\Model\EditorPickMeta;
+use Inpsyde\Recipe\Model\FeaturedImage;
 use Inpsyde\Recipe\Model\IngredientsBlock;
 use Inpsyde\Recipe\Model\RecipePostType;
 
@@ -35,6 +36,7 @@ class CoreHooks implements Hook
             'enqueue_block_editor_assets',
             function () {
                 (new EditorPicks($this->rootFile))->register();
+                (new FeaturedImage($this->rootFile))->register();
             }
         );
 
