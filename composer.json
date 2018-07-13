@@ -1,0 +1,19 @@
+{
+    "name": "inpsyde/recipe",
+    "description": "Recipes plugin, demonstrate Gutenberg",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Remer",
+            "email": "d.remer@inpsyde.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Inpsyde\\Recipe\\": "src/"
+        }
+    }
+}
