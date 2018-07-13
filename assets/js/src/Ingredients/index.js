@@ -1,3 +1,5 @@
+import IngredientsList from './Modules/IngredientsList.js'
+
 const {registerBlockType} = wp.blocks
 
 registerBlockType('recipe/ingredients', {
@@ -8,7 +10,7 @@ registerBlockType('recipe/ingredients', {
     html: false // Do not show the Edit HTML option.
   },
   edit: () => {
-    return null
+    return <IngredientsList />
   },
 
   save: () => {
