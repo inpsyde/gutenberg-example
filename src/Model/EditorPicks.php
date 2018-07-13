@@ -6,8 +6,6 @@ namespace Inpsyde\Recipe\Model;
 class EditorPicks
 {
 
-    const NAMESPACE = 'recipe/editor_picks';
-
     private $rootFile;
 
     public function __construct(string $rootFile)
