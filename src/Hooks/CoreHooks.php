@@ -3,8 +3,8 @@ declare(strict_types = 1);
 
 namespace Inpsyde\Recipe\Hooks;
 
-use Inpsyde\Recipe\Model\IngredientsBlock;
 use Inpsyde\Recipe\Model\FeaturedImage;
+use Inpsyde\Recipe\Model\IngredientsBlock;
 use Inpsyde\Recipe\Model\RecipePostType;
 
 class CoreHooks implements Hook
