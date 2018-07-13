@@ -4,7 +4,6 @@ const webpack = require( 'webpack' );
 module.exports = {
 	entry: {
 		ingredients:'./assets/js/src/Ingredients/index.js',
-		editorpicks:'./assets/js/src/EditorPicks/index.js',
 	},
 	output: {
 		filename:'./assets/js/dist/[name].js'
