@@ -4,6 +4,7 @@ declare(strict_types = 1);
 namespace Inpsyde\Recipe\Hooks;
 
 use Inpsyde\Recipe\Model\IngredientsBlock;
+use Inpsyde\Recipe\Model\FeaturedImage;
 use Inpsyde\Recipe\Model\RecipePostType;
 
 class CoreHooks implements Hook
@@ -27,6 +28,13 @@ class CoreHooks implements Hook
                 (new IngredientsBlock($this->rootFile))->register();
             }
         );
+        add_action(
+            'enqueue_block_editor_assets',
+            function () {
+                (new FeaturedImage($this->rootFile))->register();
+            }
+        );
+
 
         return true;
     }
