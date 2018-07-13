@@ -35,7 +35,6 @@ class CoreHooks implements Hook
             }
         );
 
-
-
+        return true;
     }
 }
