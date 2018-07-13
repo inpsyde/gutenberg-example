@@ -32,6 +32,7 @@ class RecipePostType
             'editor',
             'thumbnail',
             'revisions',
+            'custom-fields',
         ];
 
         return [
