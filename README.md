@@ -19,3 +19,7 @@ git diff 2-featured-image..3-show-ingredients-in-block
 ```
 You can diff two branches like seen above. This command will show you the difference between the `3-show-ingreditens-in-block` branch and the `2-featured-image` branch. As you can see, the branches are numbered, so you can easily determine, which branch is the previous branch for a specific branch.
 
+## To actually run this plugin
+This plugin relies on the composer autoloader. So you will need to run `composer install`, before you can actually activate this plugin.
+
+In addition, the build files are not present in the repository, to give you a cleaner diff. So you will need to run `npm install` as soon as JavaScript files are needed. To build the files, you will then need to run `webpack` for each branch, to create the actually used JavaScript files.
