@@ -22,7 +22,7 @@ class IngredientsBlock
         wp_register_script(
             'recipe-ingredients-block',
             plugins_url('assets/js/dist/ingredients.js', $this->rootFile),
-            ['wp-blocks', 'wp-data']
+            ['wp-blocks']
         );
 
         $success = register_block_type(
