@@ -1,5 +1,5 @@
 # Gutenberg example: Recipe plugin
-This plugin accompanies the talk in the Inpsyde developers meeting from July 16th, 2018: "Beyond the Block". The slides and the talk can be found [here](https://inpsyde.com/blog/to-be-announced).
+This plugin accompanies the talk in the Inpsyde developers meeting from July 16th, 2018: "Beyond the Block". The slides and the talk can be found [here](https://inpsyde.com/en/develop-for-gutenberg-enhance-gutenberg/).
 
 ## What is this plugin about
 Well, _do not use it in production_, its aim is to demonstrate some ways to interact with the [Gutenberg application](https://github.com/wordpress/gutenberg). This is done by developing a recipes plugin, which contains some features extending Gutenberg.
