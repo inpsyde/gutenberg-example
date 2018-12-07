@@ -1,6 +1,6 @@
-const { FormToggle, withInstanceId } = wp.components
+const { FormToggle } = wp.components
 const { PluginPostStatusInfo } = wp.editPost
-const { compose } = wp.element
+const { compose, withInstanceId } = wp.compose
 const { withSelect, withDispatch } = wp.data
 const { registerPlugin } = wp.plugins
 

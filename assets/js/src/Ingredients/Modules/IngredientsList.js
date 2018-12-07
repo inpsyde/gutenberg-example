@@ -19,17 +19,25 @@ const Render = ({selected, isRequesting}) => {
 const IngredientsList = withSelect(
   (select) => {
     const selectedIds = select('core/editor').getEditedPostAttribute('categories')
-    const { getCategories, isRequestingCategories } = select('core')
+    const { isResolving } = select('core/data')
+    const { getEntityRecords } = select('core')
+
     var selected = []
-    if (!isRequestingCategories() && getCategories()) {
-      selected = getCategories().filter(
-        term => {
-          return selectedIds.indexOf(term.id) !== -1
-        }
-      )
+    var isRequesting = false
+    if (selectedIds.length) {
+      const query = {
+        per_page: -1,
+        include: selectedIds
+      }
+      const records = getEntityRecords(
+        'taxonomy', 'category', query)
+      isRequesting = isResolving('core', 'getEntityRecords', [ 'taxonomy', 'category', query ])
+
+      selected = (!records) ? [] : records
     }
+
     return {
-      isRequesting: isRequestingCategories(),
+      isRequesting,
       selected
     }
   }
