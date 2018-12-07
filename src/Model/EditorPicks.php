@@ -20,7 +20,7 @@ class EditorPicks
         wp_enqueue_script(
             'recipe-editor-picks',
             plugins_url('assets/js/dist/editorpicks.js', $this->rootFile),
-            ['wp-blocks', 'wp-data', 'wp-components', 'wp-edit-post']
+            ['wp-blocks', 'wp-data', 'wp-components', 'wp-edit-post', 'wp-compose']
         );
 
         return true;
