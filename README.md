@@ -1,6 +1,9 @@
 # Gutenberg example: Recipe plugin
 This plugin accompanies the talk in the Inpsyde developers meeting from July 16th, 2018: "Beyond the Block". The slides and the talk can be found [here](https://inpsyde.com/en/develop-for-gutenberg-enhance-gutenberg/).
 
+## UNMAINTAINED
+_NOTE:_ This repository is no longer maintained.
+
 ## What is this plugin about
 Well, _do not use it in production_, its aim is to demonstrate some ways to interact with the new Block editor of WordPress 5.0. This is done by developing a recipes plugin, which contains some features extending Gutenberg.
 During the talk, the different features are discussed. They are grouped in branches. Each branch starts off from the previously discussed branch. While during the talk, we discuss only the central parts of the code, a diff between the current branch and its previous branch gives you an insight about the whole code, which was needed for a specific feature.
