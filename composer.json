@@ -2,7 +2,7 @@
     "name": "inpsyde/recipe",
     "description": "Recipes plugin, demonstrate Gutenberg",
     "type": "wordpress-plugin",
-    "license": "MIT",
+    "license": "gpl-2.0-or-later",
     "authors": [
         {
             "name": "David Remer",
