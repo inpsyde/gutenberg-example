@@ -33,3 +33,11 @@ keep up, you can diff the `master` against the `before-wp-5`-branch.
 This plugin relies on the composer autoloader. So you will need to run `composer install`, before you can actually activate this plugin.
 
 In addition, the build files are not present in the repository, to give you a cleaner diff. So you will need to run `npm install` as soon as JavaScript files are needed. To build the files, you will then need to run `webpack` for each branch, to create the actually used JavaScript files.
+
+## Crafted by Inpsyde
+The team at [Inpsyde](https://inpsyde.com) is engineering the Web since 2006.
+
+## License
+Copyright (c) 2018 Inpsyde GmbH
+
+This library is released under ["GPL 2.0 or later" License](LICENSE).
